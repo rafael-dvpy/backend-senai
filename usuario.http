@@ -1,0 +1,15 @@
+GET http://localhost:2000/usuario
+
+###
+GET http://localhost:2000/usuario/1
+
+###
+POST http://localhost:2000/usuario
+content-type: application/json
+
+{
+      "id": 5,
+      "name": "Rafa",
+      "email": "rafa@gail.com",
+      "password": "Rafa"
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "autor": 1,
+        "estiloDoEsporte": "basquete",
+        "descricao": "campo com teto",
+        "imagem": "http://imagem.com",
+        "endereco": "rua tal cidade nova",
+        "coordenada": [3231321312, 321321321],
+        "atributos": ["banheiro", "bebedouro"]
+    },
+    {
+        "id": 3,
+        "autor": 1,
+        "estiloDoEsporte": "futebol",
+        "descricao": "campo com teto",
+        "imagem": "http://imagem.com",
+        "endereco": "rua tal cidade nova",
+        "coordenada": [3231321312, 321321321],
+        "atributos": ["banheiro", "bebedouro"]
+    }
+]
+
