@@ -1,11 +1,11 @@
 import { Router } from "express"
-import userController from "./userController/user.controller.js"
-import camposController from "./camposController/campos.controller.js"
+import playerController from "./playerController"
+import campoController from "./campoController"
 
 const controller = Router()
 
-controller.use("/usuario", userController)
+controller.use("/player", playerController)
 
-controller.use("/campos", camposController)
+controller.use("/campo", campoController)
 
 export default controller
