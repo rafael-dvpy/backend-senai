@@ -1,6 +1,6 @@
 import { Router } from "express"
-import playerController from "./playerController"
-import campoController from "./campoController"
+import playerController from "./playerController.js"
+import campoController from "./campoController.js"
 
 const controller = Router()
 
