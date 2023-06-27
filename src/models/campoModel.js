@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export const CampoModel = mongoose.model("Campo", {
+export const CampoModal = mongoose.model("Campo", {
   name: { type: String, required: true},
   sports: { type: Array, required: true},
   location: { type: String, required: true},
