@@ -1,3 +1,4 @@
+
 import { PlayerModal } from "../models/playerModel.js"
 
 export const getAllPlayers = async (req, res) => {
@@ -45,9 +46,11 @@ export const updatePlayerById = (req, res) => {
 }
 
 export const deletePlayerById = (req, res) => {
+
     const id = req.body.id
 
     PlayerModal.findByIdAndDelete(id)
 
     res.send("player foi de americanas")
 }
+

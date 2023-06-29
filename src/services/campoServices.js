@@ -2,7 +2,6 @@ import { CampoModal } from "../models/campoModel.js"
 
 export const getAllCampos = async (req, res) => {
     const campos = await CampoModal.find()
-
     res.send(campos)
 }
 

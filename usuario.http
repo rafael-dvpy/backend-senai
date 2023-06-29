@@ -1,10 +1,10 @@
-GET http://localhost:2000/usuario
+GET http://localhost:2001/player
 
 ###
-GET http://localhost:2000/usuario/1
+GET http://localhost:2001/player/649a2cccd08b6b694351f0f8
 
 ###
-POST http://localhost:2000/usuario
+POST http://localhost:2001/player
 content-type: application/json
 
 {
@@ -13,3 +13,6 @@ content-type: application/json
       "email": "rafa@gail.com",
       "password": "Rafa"
 }
+
+###
+DELETE  http://localhost:2001/player/649a2cccd08b6b694351f0f8
