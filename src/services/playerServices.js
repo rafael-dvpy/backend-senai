@@ -1,7 +1,9 @@
-import {PlayerModal} from "../models/playerModel.js"
+
+import { PlayerModal } from "../models/playerModel.js"
 
 export const getAllPlayers = async (req, res) => {
     const players = await PlayerModal.find()
+
     res.send(players)
 }
 
@@ -25,6 +27,7 @@ export const createPlayer = async (req, res) => {
     await newPlayer.save()
 
     res.send(playerData)
+
 }
 
 export const updatePlayerById = (req, res) => {
@@ -43,9 +46,11 @@ export const updatePlayerById = (req, res) => {
 }
 
 export const deletePlayerById = (req, res) => {
-    const id = req.params.id
+
+    const id = req.body.id
 
     PlayerModal.findByIdAndDelete(id)
 
-    res.send("Deleted")
+    res.send("player foi de americanas")
 }
+

@@ -8,7 +8,11 @@ playerController.get("/", getAllPlayers)
 
 playerController.get("/:id", getPlayerById)
 
-playerController.post("/", createPlayer)
+playerController.get("/", createPlayer)
+
+playerController.get("/", updatePlayerById)
+
+
 
 playerController.delete("/:id", deletePlayerById)
 

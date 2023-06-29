@@ -1,4 +1,4 @@
-import {CampoModal} from "../models/campoModel.js"
+import { CampoModal } from "../models/campoModel.js"
 
 export const getAllCampos = async (req, res) => {
     const campos = await CampoModal.find()
@@ -30,7 +30,7 @@ export const createNewCampo = async (req, res) => {
     res.send(campoData)
 }
 
-export const updateCampoById = (req, res) => {
+export const upadateCampoById = (req, res) => {
     const campoData = {
         name: req.body.name,
         sports: req.body.sports,
@@ -43,15 +43,15 @@ export const updateCampoById = (req, res) => {
 
     const id = req.params.id
 
-    CampoModal.findByIdAndUpdate(id, playerData)
+    CampoModal.findByIdAndUpdate(id, campoData)
 
-    res.send(CampoData)
+    res.send(campoData)
 }
 
 export const deleteCampoById = (req, res) => {
-    const id = req.params.id
+    const id = req.body.id
 
     CampoModal.findByIdAndDelete(id)
 
-    res.send("Deleted")
+    res.send("campo foi de F")
 }
